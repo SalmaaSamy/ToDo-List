@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To DO List App</title>
+    <link rel="icon" type="image/png" href="../imgs/todo.png">
+    <meta name="description" content="Hi, from my web page to do list .. i hope u enjoy using it" />
+
+    <link rel="stylesheet" href="CSSStyle/page.css">
+    <link rel="stylesheet" href="CSSStyle/headerStlye.css">
+    <link rel="stylesheet" href="CSSStyle/addItem.css">
+    <link rel="stylesheet" href="CSSStyle/listStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- The defer attribute is a boolean attribute.
+        When present, it specifies that the script is executed when the page has finished parsing.
+        Note: The defer attribute is only for external scripts (should only be used if the src attribute is present). -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <i class="fas fa-bomb"></i>
+        <h1 class="headTitle">To Do List</h1>
+        <i class="fas fa-bomb"></i>
+    </header>
+    <section>
+        <textarea id="input" name="inputText" class="inputField" title="add your text in to do list"
+            autofocus></textarea>
+        <button id="inputButton" type="button" class="inputButton" title="add"><i
+                class="fa-solid fa-check"></i></button>
+        <button id="clearText" type="button" class="clearTextButton" title="clear text"><i
+                class="fa fa-trash"></i></button>
+        <section id="toDoList" class="todo-container">
+            <ul class="todo-list">
+                <!-- javascript elements -->
+            </ul>
+        </section>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+section {
+    /* to add text area and add button in same line (grid structure)*/
+    display: grid;
+    /* sets size of the gap between column element */
+    column-gap: 5px;
+    /*defines the size of text area and add button in same line */
+    grid-template-columns: 60% 5% 5%;
+    /* defines how the browser distributes space between and around content items */
+    justify-content: center;
+    margin-top: auto;
+}
+
+section .inputField {
+    height: 50px;
+    min-height: 50px;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #355070;
+    font-size: 20px;
+    padding: 10px;
+    /* to make scroll if it overflow */
+    overflow: auto;
+    /* to prevent text to go outside the width  */
+    overflow-x: hidden;
+}
+
+section .inputField::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* the place contians line scroll */
+section .inputField::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #177e89;
+}
+
+/* the line scroll itself */
+section .inputField::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ffc857;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px white;
+}
+
+/* when cursor on the line scroll */
+section .inputField::-webkit-scrollbar-thumb:hover {
+    background: #f6b430;
+}
+
+section .inputButton,
+section .clearTextButton {
+    border-radius: 10px;
+    border: 2px solid #355070;
+    background-color: white;
+    font-size: 20px;
+}
+
+/* when cursor on the buttons*/
+section .inputButton:hover,
+section .clearTextButton:hover {
+    background-color: #177e89;
+    color: white;
+}

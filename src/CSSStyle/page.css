@@ -1,0 +1,15 @@
+* {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    /* allows us to include the padding and border in an element's total width and heigh */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+    /* createing an image consisting of transition between two or more colors along a straight line. */
+    background-image: linear-gradient(to right, #177e89, #db3a34, #ffc857, #323031);
+    margin: 50px 2%;
+}

@@ -1,0 +1,62 @@
+.todo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 60%;
+
+}
+
+.todo {
+    display: flex;
+    background: #fff;
+    font-size: 20px;
+    align-items: center;
+    margin: 20px;
+    min-height: 40px;
+    /* transition used to change elemt slowly 
+     is a shorthand property for :-
+     1- transition-property =>  sets the CSS properties to which a transition effect should be applied.
+     2- transition- delay => pecifies the duration to wait before starting a property's transition effect when its value changes.
+     3- transition-timing-function => sets the length of time a transition animation should take to complete
+     4- transition-duration  => sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+    */
+    transition: all 0.5s ease;
+    border: 2px solid #355070;
+    border-radius: 10px;
+}
+
+.todo-item {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.complete-btn,
+.trash-btn {
+    background-color: #db3a34;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 10px;
+    border: 2px solid;
+}
+
+.completed {
+    /* to add line in completed tasks */
+    text-decoration: line-through;
+    opacity: 0.35;
+}
+
+.fall {
+    /* translateY(8rem)  => drop the completed task note ==> 1rem equals 16px.
+     rotateZ(90deg) => when remove rotate it by 90 degree
+    */
+    transform: translateY(10rem) rotateZ(90deg);
+    opacity: 0;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
